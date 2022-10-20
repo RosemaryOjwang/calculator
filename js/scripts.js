@@ -15,9 +15,10 @@ function divide(number1, number2) {
   return number1 / number2;
 }
 //user interface logic
-const number1 = parseInt(prompt("Enter a number","00"));
-const number2 = parseInt(prompt("Enter another number","00"));
-window.alert("The sum is " + add(number1, number2) + ".");
-window.alert("The difference is " + subtract(number1, number2) + ".");
-window.alert("The product is " + multiply(number1, number2) + ".");
-window.alert("The quotient is " + divide(number1, number2) + ".");
+const number1 = parseInt(prompt("Enter a number", "00"));
+const number2 = parseInt(prompt("Enter another number", "00"));
+const sum = "The sum of your numbers=" + add(number1, number2) + ", ";
+const difference = "The difference of your numbers=" + subtract(number1, number2) + ",";
+const product = "The product of your numbers =" + multiply(number1, number2) +", ";
+const quotient = "The quotient of your numbers is " + divide(number1, number2) + ".";
+window.alert(sum + product + difference + quotient);
